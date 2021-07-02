@@ -19,9 +19,9 @@
       background-color: #777;
     }
 
-    * {
+/*     * {
   box-sizing: border-box;
-}
+} */
 
 /* Create two equal columns that floats next to each other */
 .column {
@@ -45,12 +45,12 @@
 
     
         <!-- LEFT -->
-        <div class="sequence-graph-container" >
+        <div class="sequence-graph-container" style="border:1px solid black">
             <!-- <div class="sequence-graph-title">Sequence Graph</div>
             <div class="sequence-graph-details">
                 <div class="total-sequences">Total Sequences: <span class="detail-nums" id="num-sequences"></span></div>
             </div> -->
-            <svg class="sequence-graph-svg" id="sequence-graph-svg"></svg>
+            <svg class="sequence-graph-svg" id="sequence-graph-svg"width="100%" height="625px"></svg>
             <!-- <div class="sequence-graph-controls">
                 <label for="incrementSequenceGraph">Graph Size:</label>
                 <input type="button" value="+" id="incrementSequenceGraph" onclick="incrementGraph(1)" />
@@ -61,7 +61,7 @@
         </div>
             
     <!-- RIGHT -->
-        <div class="state-graph-container">
+        <div class="state-graph-container"style="width:45%; border:1px solid black">
             
         <div id='state_images' class="scrollmenu">
         </div>
@@ -71,7 +71,7 @@
                 <input type="button" id="incrementStateGraph" value="+" onclick="incrementGraph(0)" />
                 <input type="button" id="decrementStateGraph" value="-" onclick="decrementGraph(0)" />
             </div> -->
-            <svg id="state-graph-svg"></svg>
+            <svg id="state-graph-svg" width="100%" height="625px"></svg>
             <div class="state-graph-details">
                 <!-- <div for="num-statenodes">State Nodes: <span class="detail-nums" id="num-statenodes"></span></div>
                 <div class="detail-nums" id="num-statenodes"></div>
